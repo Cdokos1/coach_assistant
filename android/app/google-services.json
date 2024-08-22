@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466305741476",
+    "project_id": "coach-assistant-245bc",
+    "storage_bucket": "coach-assistant-245bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466305741476:android:e45ae0fa68461cfc09ec31",
+        "android_client_info": {
+          "package_name": "com.example.coach_assistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBld9sw4w494PIWHCNVPZ5QREHK-hMi1wE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

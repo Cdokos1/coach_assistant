@@ -1,0 +1,1 @@
+ /Users/christosntokos/developer/Projects/coach_assistant/.dart_tool/flutter_build/b404eef547cdb1621a835436c408d4d5/native_assets.yaml: 
