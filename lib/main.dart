@@ -1,5 +1,6 @@
 
-
+import 'input_user.dart';
+import 'package:coach_assistant/input_user.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -15,8 +16,14 @@ final  _router = GoRouter(
 routes: [
   GoRoute(
       path: '/',
-  builder: (context, state)=> (MyHomePage(title: "Welcome to coach assistant")))
-]
+  builder: (context, state)=> (MyHomePage(title: "Welcome to coach assistant")),),
+
+  GoRoute(
+    path: '/users_data',
+builder: (context, state)=>(ManageUsersData())
+),
+  ],
+
 );
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -123,8 +130,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            ElevatedButton(onPressed: ()=> context.go('/users_data'), child:const Text('Users Data page')),
+             const Text(
+              'You have pushed the button this many times:'
             ),
             Text(
               '$_counter',
