@@ -15,7 +15,14 @@ class _ManageUsersDataState extends State<ManageUsersData>{
   @override
   Widget build (BuildContext context){
     return Scaffold(
-      appBar: AppBar(title: const Text('Users Data')),
+
+      appBar: AppBar(title: const Text('Users Data'),
+      actions: [IconButton(icon: const Icon(Icons.home),
+      onPressed: ()=> context.go('/'),
+      ),
+      ],
+      ),
+
     );
   }
 }
